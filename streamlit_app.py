@@ -2,6 +2,13 @@ import streamlit as st
 
 from forms.contact import contact_form
 
+import os
+
+# Get the directory the current script is in
+current_dir = os.path.dirname(__file__)
+logo_path = os.path.join(current_dir, "assets", "jun.ico")
+
+
 # --- PAGE SETUP ---
 about_page = st.Page(
     page="views/about_me.py",
@@ -29,7 +36,8 @@ pg = st.navigation(
 )
 
 # --- SHARED ON ALL PAGES ---          
-st.logo("assets/jun.ico")             
+#st.logo("assets/jun.ico")
+st.logo(logo_path)
 st.sidebar.text("© 2026 Jun Song") 
 # --- RUN NAVIGATION ---               │
 pg.run()  
