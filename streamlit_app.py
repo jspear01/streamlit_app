@@ -37,7 +37,8 @@ pg = st.navigation(
 
 # --- SHARED ON ALL PAGES ---          
 #st.logo("assets/jun.ico")
-st.logo(logo_path)
+#st.logo(logo_path)
+st.logo("https://raw.githubusercontent.com/username/repo/main/assets/jun.ico")
 st.sidebar.text("© 2026 Jun Song") 
 # --- RUN NAVIGATION ---               │
 pg.run()  
