@@ -9,7 +9,7 @@ st.write("Exploring H-1B employer data across fiscal years.")
 # --- DATA LOADING ---
 @st.cache_data
 def load_data():
-    file_path = "data/EmployerInformation_v3.csv"
+    file_path = "data/employerinformation.csv"
     # Load data
     df = pd.read_csv(file_path, sep='\t', encoding='utf-16', low_memory=False)
     
