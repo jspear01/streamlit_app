@@ -12,7 +12,7 @@ def load_data():
     file_path = "data/employerinformation.csv"
     # Load data
     #df = pd.read_csv(file_path, sep='\t', encoding='utf-16', low_memory=False)
-    df = pd.read_csv(file_path, sep='\t', encoding='latin1', low_memory=False)
+    df = pd.read_csv(file_path, sep=',', encoding='latin1', low_memory=False)
     
     # Cleaning column names: trim, lower, snake_case
     df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_')
